@@ -2,18 +2,18 @@
     "products": [
       {
         "id": 1,
-        "name": "Camisa",
-        "price": 59.9
+        "name": "PS5 Mídia Digital",
+        "price": 3499.99
       },
       {
         "id": 2,
-        "name": "Calça vermelha",
-        "price": 90
+        "name": "Game EA Sports FC 24",
+        "price": 249.99
       },
       {
-        "id": 1,
-        "name": "Boné aba eta",
-        "price": 29.9
+        "id": 3,
+        "name": "Controle Dualsense",
+        "price": 369.99
       }
     ]
   }
