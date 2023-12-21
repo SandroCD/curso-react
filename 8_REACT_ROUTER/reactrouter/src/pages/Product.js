@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"; // Utilizado para trazer parâmetros, como o Id por exemplo
+import { Link, useParams } from "react-router-dom"; // Utilizado para trazer parâmetros, como o Id por exemplo
 import { useFetch } from "../hooks/useFetch";
 
 const Product = () => {
@@ -20,6 +20,8 @@ const Product = () => {
         <div>
             <h1>{product.name}</h1>
             <p>R$ {product.price}</p>
+            {/* 6 - NESTED ROUTE */}
+            <Link to={`/products/${product.id}/info`} >Mais informações</Link >
         </div>
       )}
     </>
