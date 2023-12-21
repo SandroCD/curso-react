@@ -3,7 +3,7 @@
       {
         "id": 1,
         "name": "PS5 Mídia Digital",
-        "price": 3499.99
+        "price": 3905.07
       },
       {
         "id": 2,
@@ -12,8 +12,23 @@
       },
       {
         "id": 3,
-        "name": "Controle Dualsense",
-        "price": 369.99
+        "name": "Controle Dualsense Branco",
+        "price": 364.99
+      },
+      {
+        "id": 4,
+        "name": "PS5 Mídia Física",
+        "price": 4199.99
+      },
+      {
+        "id": 5,
+        "name": "Game NBA 2K24",
+        "price": 349.99
+      },
+      {
+        "id": 6,
+        "name": "Controle Dualsense Blue",
+        "price": 424.79
       }
     ]
   }
