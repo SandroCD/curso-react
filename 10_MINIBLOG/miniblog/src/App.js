@@ -10,6 +10,7 @@ import { useAuthentication } from './hooks/useAuthentication';
 //PAGES
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
+import Post from './pages/Post/Post';
 
 //COMPONENTS
 import Navbar from './components/Navbar';
@@ -49,6 +50,7 @@ function App() {
               <Route path="/" element={<Home/>} />
               <Route path="/about" element={<About/>} />
               <Route path="/search" element={<Search/>} />
+              <Route path="/posts/:id" element={<Post/>} />
               <Route 
                 path="/login" 
                 element={ !user ? <Login /> : <Navigate to="/" /> }
