@@ -2,7 +2,7 @@ import styles from './PostDetails.module.css';
 
 import { Link } from 'react-router-dom';
 
-const PostDetails = ({post}) => {
+const PostDetails = ({ post }) => {
   return (
     <div className={styles.post_detail}>
       <img src={post.image} alt={post.title} />
@@ -18,7 +18,7 @@ const PostDetails = ({post}) => {
       </div>
       <Link to={`/posts/${post.id}`}className="btn btn-outline">Ler</Link>
     </div>
-  )
-}
+  );
+};
 
 export default PostDetails
