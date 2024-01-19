@@ -7,11 +7,10 @@ import { useAuthValue } from '../../context/AuthContext';
 import { useFetchDocuments } from '../../hooks/useFetchDocuments';
 
 const Dashboard = () => {
-  const {user} = useAuthValue()
-  const uid = user.uid
+  const {user} = useAuthValue();
+  const uid = user.uid;
 
-  // POSTS DO USUÁRIO
-  const posts = []
+  const {documents: posts, loading} = useFetchDocuments("posts", null, uid);
 
   return (
     <div>
@@ -29,6 +28,8 @@ const Dashboard = () => {
           <p>Tem posts!</p>
         </div>
       )}
+
+      {posts && posts.map((post) => <h3>{post.title}</h3>)}
     </div>
   );
 };
